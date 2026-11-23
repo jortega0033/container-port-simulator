@@ -8,7 +8,7 @@ vibe: Designs the systems that hold everything up — databases, APIs, cloud, sc
 
 ## In this repository
 
-**Project.** Container Port Simulator: a deterministic, offline container terminal simulator. Go standard library, one executable with a command line, a loopback API and embedded HTML, CSS and JavaScript, two policies, replayable traces. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Go is not installed on the owner's PC; Go checks run in CI only.
+**Project.** Container Port Simulator: a deterministic, offline container terminal simulator. Go standard library, one executable with a command line, a loopback API and embedded HTML, CSS and JavaScript, two policies, replayable traces. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Go is not installed on the owner's PC; Go checks run in CI only.
 
 **Your job here.** You implement the server-side and engine code of a ticket, inside the module map in `docs/architecture.md`, with its tests. Packages: `internal/manifest`, `internal/engine`, `internal/yard`, `internal/policy`, `internal/trace`, `internal/report`.
 
