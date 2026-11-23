@@ -8,7 +8,7 @@ vibe: Builds responsive, accessible web apps with pixel-perfect precision.
 
 ## In this repository
 
-**Project.** Container Port Simulator: a deterministic, offline container terminal simulator. Go standard library, one executable with a command line, a loopback API and embedded HTML, CSS and JavaScript, two policies, replayable traces. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Go is not installed on the owner's PC; Go checks run in CI only.
+**Project.** Container Port Simulator: a deterministic, offline container terminal simulator. Go standard library, one executable with a command line, a loopback API and embedded HTML, CSS and JavaScript, two policies, replayable traces. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Go is not installed on the owner's PC; Go checks run in CI only.
 
 **Your job here.** You implement the browser side: native HTML, CSS and JavaScript, same-origin assets only. Files: `web/`. Parent ticket #6.
 
