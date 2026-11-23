@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local simulator for a scheduling student: load a synthetic manifest, run an inbound container terminal under two policies, replay berth, crane, yard and truck movements in Chrome, and compare waits and reshuffles on the same input. Go standard library only, `127.0.0.1` only, deterministic traces with checksums.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists, with no product behaviour.** The repository holds the plan, the delivery tooling, the Go scaffold (module, packages, smoke tests, CI) and the backlog in epic #1. Commands marked planned below do not work yet; `portsim generate`, `run`, `compare`, `serve` and `verify` exit non-zero with "not implemented yet". Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -40,10 +40,10 @@ Go is not installed on the owner's PC and nothing is installed globally. **Go ch
 
 | Purpose | Command | Status |
 |---|---|---|
-| Build | `go build -o portsim ./cmd/portsim` | planned: real with the scaffold |
-| Format check (empty output is good) | `gofmt -l .` | planned: real with the scaffold |
-| Static check | `go vet ./...` | planned: real with the scaffold |
-| Tests | `go test ./...` | planned: real with the scaffold |
+| Build | `go build -o portsim ./cmd/portsim` | real (scaffold), verified in CI only |
+| Format check (empty output is good) | `gofmt -l .` | real (scaffold), verified in CI only |
+| Static check | `go vet ./...` | real (scaffold), verified in CI only |
+| Tests | `go test ./...` | real (scaffold), verified in CI only |
 | Generate a manifest | `./portsim generate --seed 1` | planned: #2 |
 | Run a policy | `./portsim run --policy baseline <manifest.json>` | planned: #5 |
 | Compare two policies | `./portsim compare <manifest.json>` | planned: #5 |
