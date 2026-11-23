@@ -1,6 +1,6 @@
 # Implementer map
 
-Status: **only the scaffold exists, no product behaviour.** Every module below is an empty package with a smoke test. This page maps the boundaries that [PROJECT-PLAN.md](PROJECT-PLAN.md) requires onto a module layout so that parallel tickets do not collide. It adds no requirement; the plan wins where they differ. The names are the orchestrator's proposal, fixed by the scaffold; a ticket that changes one corrects this page in the same pull request.
+Status: **only the scaffold exists, no product behaviour.** Every package below is empty with a smoke test, except `cmd/portsim` (help, version and stubs that exit non-zero); `web/` holds only the design tokens and embeds nothing yet. This page maps the boundaries that [PROJECT-PLAN.md](PROJECT-PLAN.md) requires onto a module layout so that parallel tickets do not collide. It adds no requirement; the plan wins where they differ. The names are the orchestrator's proposal, fixed by the scaffold; a ticket that changes one corrects this page in the same pull request.
 
 ## Planned module map
 
@@ -17,7 +17,7 @@ Status: **only the scaffold exists, no product behaviour.** Every module below i
 | Browser assets | `web/ (embedded)` | Replay, inspection, comparison | #6 |
 | Verification | `internal/verify` | Fixtures, two-day seeds, repeatability, evidence | #7 |
 
-Dependency direction: `httpapi` and `cmd/portsim` depend on `engine`, `report` and `trace`; `engine` on `yard`, `policy`, `manifest` and `trace`; `yard` and `policy` on `manifest`. `manifest` imports nothing from the module.
+Dependency direction: `httpapi` and `cmd/portsim` depend on `engine`, `report`, `manifest` and `trace`, `httpapi` also on `web`, and `cmd/portsim` also on `httpapi` and `verify`; `verify` uses the packages it checks; `engine` depends on `yard`, `policy`, `manifest` and `trace`; `yard` and `policy` on `manifest`, `yard` also on `trace`. `manifest` imports nothing from the module.
 
 ## Freeze points
 
@@ -29,4 +29,4 @@ Parallel tickets rely on these shapes. A ticket that changes a frozen shape upda
 
 ## What is verified where
 
-Go is verified in CI only (see [CLAUDE.md](../CLAUDE.md)), on Linux. Repeatability is checked between fresh processes. Manual browser steps are owner checks in Chrome.
+Go is verified in CI only (see [CLAUDE.md](../CLAUDE.md)), on Linux and Windows. Repeatability is checked between fresh processes. Manual browser steps are owner checks in Chrome.

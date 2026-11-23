@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   hook:
-    # Review gate hook self-test. The go job below checks the product.
+    # Review gate hook self-test. The scaffold adds the product jobs.
     name: hook (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     strategy:

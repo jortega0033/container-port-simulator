@@ -2,7 +2,7 @@
 
 A seeded container terminal simulator with scheduling policies, resource constraints and a browser replay.
 
-Implementation is planned. The scope, architecture and acceptance criteria are in [the project plan](docs/PROJECT-PLAN.md). The plan includes a reproducible verification strategy for the future build.
+Only the scaffold exists; the implementation is planned. The scope, architecture and acceptance criteria are in [the project plan](docs/PROJECT-PLAN.md). The plan includes a reproducible verification strategy for the future build.
 
 - [Product requirements](docs/PROJECT-PLAN.md#product-requirements)
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
