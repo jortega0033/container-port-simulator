@@ -1,5 +1,7 @@
 # Container Port Simulator
 
+> This document specifies phase 1 of the program in [#45](https://github.com/jortega0033/container-port-simulator/issues/45). Hour figures in it are early estimates for that phase; its open tickets add up to 80 to 120 hours (2026-11-24). Work that it defers is planned in the later phases only where the program names it.
+
 ## Product requirements
 
 A scheduling student or simulation developer can load an original synthetic manifest, run a container terminal under two policies, inspect a queue or container movement in a browser replay, and see how changed priorities affected service. The operator can pause or step through saved runs and inspect an individual ship, berth, crane, gate, or stack. Each movement links to the event and predecessor that caused it.

@@ -38,3 +38,13 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #7 | Verification command | `./portsim verify` prints one line per check and exits non-zero on the first failure; CI runs it on Linux. Timings are recorded and never asserted. |
 | all | Owner checks | Manual browser steps run in Chrome by the owner. |
 | none | Licence | MIT, added by the owner on 2026-11-23 (`LICENSE`). No ticket changes it. |
+
+## Program decisions (owner, 2026-11-24)
+
+The owner accepted the goal and each suggestion below. They apply from the phase they name; the rules of `CLAUDE.md` hold for phase 1 as written.
+
+| Decision | Implemented in |
+|---|---|
+| The repository has a program goal above phase 1: a full container port simulator and optimiser, in six phases. | Program issue #45 |
+| Published benchmark instances need a licence check. Suggested: fetch at a pinned version and run from outside the repository. | Program issue #45 |
+| Suggested: no packages outside the Go standard library, the solvers included. | Program issue #45 |
