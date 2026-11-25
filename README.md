@@ -8,7 +8,7 @@ Only the scaffold exists; the implementation is planned. The scope, architecture
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
 - [Implementation backlog and epic](https://github.com/jortega0033/container-port-simulator/issues)
 
-Estimated implementation and verification effort is 19–31 engineering hours.
+The first plan of phase 1 said 19–31 engineering hours. Its open tickets, with tests and review, add up to 80 to 120 hours; the whole program is larger and is described below. All figures are estimates.
 
 ## Program goal
 
